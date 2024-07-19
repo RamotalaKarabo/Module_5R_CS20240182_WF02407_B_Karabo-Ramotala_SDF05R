@@ -52,3 +52,99 @@ p {
 }
 
 /* Add your custom styles for btn-1, btn-2, and btn-3 */
+
+
+
+/* Styling for btn-1 */
+.btn-1{
+    background:rgba(216, 227, 39, 0.68);
+    border-color:rgba(216, 227, 39, 0.68);;
+}
+
+.btn-1:hover{
+    border-color:rgba(216, 227, 39, 0.68);
+    border-style:inset;
+    background:radial-gradient(rgba(216, 227, 39, 0.68)5%,rgba(216, 227, 39, 0.0)95%);
+    color:white;
+    transform:scale(1.2);
+    animation-name:change-border;
+    animation-duration: 0.5s;
+    transition:color .5s ease-in-out, background .5s ease-in-out, transform .5s ease-in-out;
+}
+
+@keyframes change-border{
+    50%{border-style:solid;
+    border-width:0.5px}
+    100%{border-style:inset;
+    border-width:1.5px;}
+}
+
+
+/* Styling for btn-2 */
+.btn-2{
+background:rgba(239, 134, 33, 0.68)
+}
+.btn-2{
+    animation-name:change-background;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode:forward;
+}
+.btn-2:hover{
+    transform:scale(1.2);
+}
+
+@keyframes change-background{
+     0%{background:rgba(218, 25, 144, 0.68);
+        border-color:rgba(218, 25, 144, 0.68);;
+    }
+    20%{background:rgba(198, 20, 214, 0.68);
+        border-color:rgba(198, 20, 214, 0.68);
+    
+    }
+    40%{background:rgba(30, 65, 219, 0.68);
+        border-color:rgba(30, 65, 219, 0.68);
+    }
+    60%{background:rgba(60, 239, 233, 0.68);
+        border-color:rgba(60, 239, 233, 0.68);
+    }
+    80%{background:rgba(60, 239, 141, 0.68);
+        border-color:rgba(60, 239, 141, 0.68);
+    }
+    100%{background:rgba(48, 230, 20, 0.68);
+    border-style:inset;
+    border-color:rgba(48, 230, 20, 0.68);
+    }
+    }
+
+/* Styling for btn-3 */
+.btn-3{
+    background:white;
+    border-color:rgba(0,172,238,1);
+}
+.btn-3:hover{
+    animation-name:border-animation;
+    animation-duration:1s;
+    animation-fill-mode: forward;
+    animation-iteration-count:infinite;
+    animation-timing-function:ease-in-out;
+    transform:scale(1.2);
+    background:white;
+    color:rgba(0,172,238,1);;
+}
+
+@keyframes border-animation{
+
+  from{
+    border-width:4px 4px 0px 0px;
+    border-style:solid;
+    border-color:rgb(170, 222, 243);
+  }
+  to{
+    border-width:0px 0px 4px 4px;
+    border-style:solid;
+    border-color:rgb(7, 177, 244);
+  }
+
+}
